@@ -2,11 +2,12 @@ import { config, fields, singleton, collection } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'github',
+    repo: 'LNkholise/refiloe-blog',
   },
   ui: {
     brand: { 
-      name: 'Refiloe Content Manager',
+      name: 'Refiloe Letokotos Content Manager',
     },
   },
   collections: {
