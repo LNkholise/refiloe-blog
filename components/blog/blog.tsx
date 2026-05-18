@@ -4,7 +4,6 @@ import React from "react";
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MorphingText } from "@/components/ui/morphing-text";
 import { useRouter } from 'next/navigation';
 
 const texts = ["Essays", "Critiques", "Journal", "Prose"];
@@ -41,8 +40,7 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
         </div>
         <div className="lg:w-1/4">
           <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-          The blank page has beckoned to me through every season of life, offering warmth, sanctuary, and solace. 
-          Come with me as I explore the extraordinary, the everyday, and everything in between. 
+            Come with me as I explore the extraordinary, the everyday, and everything in between.
           </p>
         </div>
       </div>
@@ -55,9 +53,6 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
               backgroundColor: "rgba(0,0,0,0.3)"
             }} 
           />
-          <div className="relative flex items-center justify-center h-full z-10 opacity-60">
-            <MorphingText texts={texts} className="text-4xl sm:text-7xl text-white font-serif italic" />
-          </div>
         </div>
       </div>
 
@@ -104,7 +99,7 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
             <div className="sticky top-24 space-y-8">
               <div>
                 <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted-foreground mb-6">
-                  Older Popular Stories
+                  Older Writing
                 </h2>
                 
                 <div className="space-y-6">
@@ -123,9 +118,7 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
               </div>
 
               <div className="pt-4 border-t border-border/40">
-                <p className="text-xs font-serif italic text-muted-foreground leading-relaxed">
-                  "Writing is the only way I can keep the world from collapsing."
-                </p>
+  
               </div>
             </div>
           </aside>

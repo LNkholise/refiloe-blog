@@ -7,6 +7,7 @@ import { Highlighter } from "@/components/ui/highlighter";
 interface MenuItem {
   label: string;
   href: string;
+  isExternal?: boolean; // Added optional property for external links
 }
 
 interface MenuSection {
@@ -30,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
 
   const menuItems: MenuSection[] = [
     { 
-      category: "Writing", 
+      category: "Blog", 
       items: [
         { label: "The Beckoning Blog", href: "/blog" },
         { label: "Hae & There", href: "#" }
@@ -40,15 +41,22 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
     { 
       category: "Grief", 
       items: [
-        { label: "Grief Literacy", href: "#" },
-        { label: "Grief Consulting", href: "/grief" }
+        { label: "Grief", href: "/grief" }
       ],
       description: "Coming Soon."
     },
     { 
       category: "Projects", 
       items: [
-        { label: "Podcasts", href: "https://youtube.com/playlist?list=PLfs2NHMZSv4oD5vwScw6Fjn8kqadds2G1&si=AzOOdN6pvybkyqn5" }
+        { label: "Projects", href: "#" }
+      ],
+      description: "Coming Soon."
+    },
+    {
+      category: "Shop",
+      items: [
+        // Flagged this link as external
+        { label: "Shop", href: "https://coming-soon-9534.myshopify.com/password", isExternal: true }
       ],
       description: "Coming Soon."
     },
@@ -127,17 +135,37 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
                 {group.category}
               </h3>
               <ul className="flex flex-col gap-6">
-                {group.items.map((item, i) => (
-                  <li key={i}>
-                    <Link 
-                      href={item.href}
-                      onClick={() => setIsMenuOpen(false)} 
-                      className="text-white text-3xl md:text-5xl font-light hover:italic transition-all inline-block"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+                {group.items.map((item, i) => {
+                  const linkClass = "text-white text-3xl md:text-5xl font-light hover:italic transition-all inline-block";
+
+                  if (item.isExternal) {
+                    return (
+                      <li key={i}>
+                        <a 
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setIsMenuOpen(false)} 
+                          className={linkClass}
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    );
+                  }
+
+                  return (
+                    <li key={i}>
+                      <Link 
+                        href={item.href}
+                        onClick={() => setIsMenuOpen(false)} 
+                        className={linkClass}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -148,7 +176,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
             <p 
               className={`text-[#D8CFC4] font-serif italic font-light text-lg leading-relaxed text-left transition-all duration-500 ease-in-out`}
             >
-              {hoveredDescription || "Coming Soon"} 
+            Contact <a href="mailto:letokotorefiloe@gmail.com" target="_blank" rel="noopener noreferrer" className="underline text-blue-200">letokotorefiloe@gmail.com</a>
             </p>
           </div>
         </div>

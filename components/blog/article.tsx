@@ -46,7 +46,7 @@ export default function ArticleSection({ menu, coverImage, content, duration, pi
       ),
       blockquote: ({ children }) => (
         <blockquote className="relative my-20 py-12 text-center max-w-2xl mx-auto border-y border-neutral-100">
-          {/* Opening Quote Symbol - Kept as Serif for elegance */}
+          {/* Opening Quote Symbol */}
           <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-background px-6 text-5xl font-serif italic text-[#C2A15A] select-none">
             &ldquo;
           </span>
@@ -87,7 +87,7 @@ export default function ArticleSection({ menu, coverImage, content, duration, pi
     },
   inline: {
     link: ({ href, children }) => (
-      <a href={href}>
+      <a href={href} target="_blank"  rel="noopener noreferrer">
         <Highlighter> 
           {children}
         </Highlighter>
@@ -171,12 +171,11 @@ export default function ArticleSection({ menu, coverImage, content, duration, pi
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-xs leading-relaxed text-foreground pt-4 border-t border-neutral-100">
-                    Tristique sollicitudin nibh sit amet commodo. Sit amet justo donec enim diam vulputate ut pharetra.
-                  </p>
-                  <Button variant="default" className="mt-6 w-full text-[10px] font-bold uppercase tracking-widest rounded-none">
-                    Buy Author Coffee
-                  </Button>
+                  <a href="https://www.linkedin.com/in/refiloe-letokoto-0759a1409" target="_blank"  rel="noopener noreferrer" >
+                   <Button variant="default" className="mt-6 w-full text-[10px] font-bold uppercase tracking-widest rounded-none">
+                    Let's Connect
+                   </Button>
+                  </a>
                 </CardContent>
               </Card>
             </aside>

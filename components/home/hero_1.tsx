@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ArrowRightIcon, LinkedinLogoIcon, FacebookLogoIcon, XLogoIcon } from "@phosphor-icons/react";
+import { ArrowRightIcon, LinkedinLogoIcon, YoutubeLogoIcon } from "@phosphor-icons/react";
 import { Button } from "../ui/button";
 
 export default function HeroSection({
@@ -33,43 +33,41 @@ export default function HeroSection({
       </div>
       <div className="relative z-10 flex w-full lg:w-[35%] flex-col justify-between bg-[#D8CFC4] p-8 lg:p-12 text-white order-2 gap-8 lg:gap-0 shrink-0">
         <div className="gap-4">
-          <p className="text-xs font-bold uppercase tracking-[0.4em] text-primary font-sans">Author • Essayist</p>
+          <p className="text-xs font-bold uppercase tracking-[0.4em] text-primary font-sans">Refiloe Letokoto</p>
         </div>
         
         <div className="max-w-xs">
           <p className="mb-8 lg:mb-10 text-lg lg:text-2xl font-serif italic leading-relaxed text-primary">
-            Explorer of the Extraordinary, the Everyday, and Everything In Between.
+            Wonderer, Writer, Witness.
           </p>
-          <Button variant="default" className="flex items-center gap-2 text-sm w-fit">
-            Read More <ArrowRightIcon size={16} />
+          <Button variant="default" 
+                  className="flex items-center gap-2 text-sm w-fit"
+                  onClick={() => {
+                  const targetSection = document.getElementById("content-section");
+                  targetSection?.scrollIntoView({ behavior: "smooth" });
+                }}
+          >
+            Come with Me <ArrowRightIcon size={16} />
           </Button>
         </div>
         
         <div className="flex flex-col gap-8 lg:gap-0">
           <div className="flex items-center gap-8">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/refiloe-letokoto-0759a1409" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <LinkedinLogoIcon size={15} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
+              <LinkedinLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
             </a>
             <a 
-              href="https://facebook.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <FacebookLogoIcon size={15} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
-            </a>
-            <a 
-              href="https://x.com" 
+              href="https://youtube.com/@refiloeletokoto?si=77xbUYFl2n155RrS" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="X"
             >
-              <XLogoIcon size={15} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
+              <YoutubeLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
             </a>
           </div>
         </div>
