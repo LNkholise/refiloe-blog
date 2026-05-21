@@ -12,8 +12,6 @@ export default function HeroSection({
     <div className="flex flex-col lg:flex-row min-h-screen lg:h-screen w-full lg:overflow-hidden bg-background font-sans">
       
       <div className="relative flex w-full lg:w-1/3 flex-col justify-between bg-[#D8CFC4] p-8 md:p-12 lg:p-16 text-white order-1 gap-12 lg:gap-0 shrink-0">
-        
-        {/* Navbar Slot */}
         <div className="relative z-[60] flex items-center gap-2 font-bold tracking-tighter text-primary">
           {navbar}
         </div>
