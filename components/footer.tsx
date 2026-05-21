@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
     {
       title: "Support",
       links: [
-        { name: "Contact", url: "/contact" },
-        { name: "Sign Up", url: "/" },
+        { name: "Contact", url: "mailto:letokotorefiloe@gmail.com", isExternal: true },
+        { name: "Sign Up", icon: "↗", url: "https://mailchi.mp/1a93a9da26bb/v3r48lixni", isExternal: true },
       ],
     },
     {
@@ -40,6 +40,7 @@ const Footer: React.FC = () => {
       links: [
         { name: "Linkedin", icon: "↗", url: "www.linkedin.com/in/refiloe-letokoto-0759a1409", isExternal: true },
         { name: "Youtube", icon: "↗", url: "https://youtube.com/@refiloeletokoto?si=77xbUYFl2n155RrS", isExternal: true },
+        { name: "Instagram", icon: "↗", url: "https://www.instagram.com/refiloeletokoto?igsh=MTJrOWNyNXh5NnJrMw%3D%3D&utm_source=qr", isExternal: true },
       ],
     },
   ];

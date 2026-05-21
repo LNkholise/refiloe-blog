@@ -34,13 +34,13 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
        <div className="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-20 gap-8">
         <div className="lg:w-1/2">
           <h1 className="w-full lg:w-[140%] text-6xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary mt-12 lg:mt-0">
-            <span className="block font-serif italic font-light tracking-normal ml-[-4px]">The</span>
-            <span className="block font-black uppercase">Beckoning</span>
+            <span className="block font-serif italic font-light tracking-normal ml-[-4px]">WON</span>
+            <span className="block font-black uppercase">DER</span>
           </h1>
         </div>
         <div className="lg:w-1/4">
           <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-            Come with me as I explore the extraordinary, the everyday, and everything in between.
+            This is not a blog. This is a hard-won return to exploring the extraordinary, the everyday, and everything in between
           </p>
         </div>
       </div>

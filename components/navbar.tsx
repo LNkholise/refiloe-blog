@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -7,13 +8,12 @@ import { Highlighter } from "@/components/ui/highlighter";
 interface MenuItem {
   label: string;
   href: string;
-  isExternal?: boolean; // Added optional property for external links
+  isExternal?: boolean;
 }
 
 interface MenuSection {
   category: string;
   items: MenuItem[];
-  description: string;
 }
 
 interface NavbarProps {
@@ -27,38 +27,23 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
   const [hoverMenu, setHoverMenu] = useState(false);
   const [hoverClose, setHoverClose] = useState(false);
   const [hoverHome, setHoverHome] = useState(false);
-  const [hoveredDescription, setHoveredDescription] = useState<string | null>(null);
 
   const menuItems: MenuSection[] = [
     { 
       category: "Blog", 
-      items: [
-        { label: "The Beckoning Blog", href: "/blog" },
-        { label: "Hae & There", href: "#" }
-      ],
-      description: "Coming Soon."
+      items: [{ label: "The Beckoning Blog", href: "/blog" }]
     },
     { 
       category: "Grief", 
-      items: [
-        { label: "Grief", href: "/grief" }
-      ],
-      description: "Coming Soon."
+      items: [{ label: "Grief", href: "/grief" }]
     },
     { 
       category: "Projects", 
-      items: [
-        { label: "Projects", href: "#" }
-      ],
-      description: "Coming Soon."
+      items: [{ label: "Projects", href: "/projects" }]
     },
     {
       category: "Shop",
-      items: [
-        // Flagged this link as external
-        { label: "Shop", href: "https://coming-soon-9534.myshopify.com/password", isExternal: true }
-      ],
-      description: "Coming Soon."
+      items: [{ label: "Shop", href: "https://coming-soon-9534.myshopify.com/password", isExternal: true }]
     },
   ];
 
@@ -69,6 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
 
   return (
     <>
+      {/* Kept your exact wrapper classes, positioning, and z-index untouched */}
       <div className="relative top-0 left-0 right-12 md:left-10 md:right-[40%] flex justify-between items-center z-50 pointer-events-none">
         <button 
           onMouseEnter={() => setHoverMenu(true)}
@@ -86,27 +72,30 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
         </button>
       </div>
       
+      {/* Changed bg-chart-4 to your dark charcoal tone for a more editorial feel */}
       <div 
-        className={`fixed inset-0 bg-chart-4 z-50 transition-transform duration-700 ease-in-out flex flex-col ${getTranslateClass()}`}
+        className={`fixed inset-0 bg-[#2B2522] z-50 transition-transform duration-700 ease-in-out flex flex-col ${getTranslateClass()}`}
       >
-        <div className="flex justify-between py-12 px-22 items-center">
-            <button 
-              onMouseEnter={() => setHoverHome(true)}
-              onMouseLeave={() => setHoverHome(false)}
-              onClick={() => {
-                setIsMenuOpen(false); 
-                router.push('/');
-              }}
-              className="font-sans text-xs font-bold text-muted uppercase tracking-[0.5em]"
-            >
-              {hoverHome ? (
-                <Highlighter action="underline" color="#C2A15A">
-                  HOME
-                </Highlighter>
-              ) : (
-                "HOME"
-              )}
-            </button>
+        <div className="flex justify-between py-12 px-12 md:px-24 items-center">
+          <button 
+            onMouseEnter={() => setHoverHome(true)}
+            onMouseLeave={() => setHoverHome(false)}
+            onClick={() => {
+              setIsMenuOpen(false); 
+              router.push('/');
+            }}
+            className="font-sans text-xs font-bold text-muted-foreground uppercase tracking-[0.5em] transition-colors hover:text-white"
+          >
+            {hoverHome ? (
+              <Highlighter action="underline" color="#C2A15A">
+                HOME
+              </Highlighter>
+            ) : (
+              "HOME"
+            )}
+          </button>
+
+          {/* Removed the em dash (—) from Close */}
           <button 
             onMouseEnter={() => setHoverClose(true)}
             onMouseLeave={() => setHoverClose(false)}
@@ -115,28 +104,25 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
           >
             {hoverClose ? (
               <Highlighter action="underline" color="#C2A15A">
-                Close —
+                CLOSE
               </Highlighter>
             ) : (
-              "Close —"
+              "CLOSE"
             )}
           </button>
         </div>
         
-        <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-12 p-12 md:p-24 overflow-y-auto">
+        {/* Switched to lg:grid-cols-4 so all categories sit on one row cleanly */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 p-12 md:p-24 overflow-y-auto">
           {menuItems.map((group, idx) => (
-            <div 
-              key={idx} 
-              className="flex flex-col gap-8 transition-opacity duration-300"
-              onMouseEnter={() => setHoveredDescription(group.description)}
-              onMouseLeave={() => setHoveredDescription(null)}
-            >
-              <h3 className="text-white/20 font-sans text-xs uppercase tracking-[0.4em] border-b border-white/10 pb-4">
+            <div key={idx} className="flex flex-col gap-6">
+              {/* Removed the bottom border lines entirely */}
+              <h3 className="text-white/40 font-sans text-[10px] font-bold uppercase tracking-[0.4em]">
                 {group.category}
               </h3>
               <ul className="flex flex-col gap-6">
                 {group.items.map((item, i) => {
-                  const linkClass = "text-white text-3xl md:text-5xl font-light hover:italic transition-all inline-block";
+                  const linkClass = "text-white text-3xl md:text-5xl font-serif font-light tracking-tight hover:italic transition-all duration-300 inline-block";
 
                   if (item.isExternal) {
                     return (
@@ -171,12 +157,18 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
           ))}
         </div>
 
-        <div className="hidden lg:flex h-48 px-24 pb-16 items-end justify-start">
-          <div className="max-w-xs w-full"> 
-            <p 
-              className={`text-[#D8CFC4] font-serif italic font-light text-lg leading-relaxed text-left transition-all duration-500 ease-in-out`}
-            >
-            Contact <a href="mailto:letokotorefiloe@gmail.com" target="_blank" rel="noopener noreferrer" className="underline text-blue-200">letokotorefiloe@gmail.com</a>
+        <div className="hidden lg:flex h-48 px-12 md:px-24 pb-16 items-end justify-start">
+          <div className="max-w-md w-full"> 
+            <p className="text-[#D8CFC4] font-serif italic font-light text-xl leading-relaxed text-left">
+              Contact{" "}
+              <a 
+                href="mailto:letokotorefiloe@gmail.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="not-italic font-sans text-sm tracking-widest font-bold text-[#C2A15A] hover:text-white transition-colors duration-300 ml-2"
+              >
+                letokotorefiloe@gmail.com
+              </a>
             </p>
           </div>
         </div>
