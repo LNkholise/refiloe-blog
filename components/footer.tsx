@@ -22,10 +22,10 @@ const Footer: React.FC = () => {
     {
       title: "Explore",
       links: [
-        { name: "Our Story", url: "/about" },
-        { name: "Gallery", url: "/gallery" },
-        { name: "Blog", url: "/blog" },
-        { name: "Events", url: "/events" },
+        { name: "Home", url: "/" },
+        { name: "The Regathering", url: "/blog" },
+        { name: "Grief", url: "/grief" },
+        { name: "Collabs etc.", url: "/projects" },
       ],
     },
     {
