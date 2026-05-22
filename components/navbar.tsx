@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
   const menuItems: MenuSection[] = [
     { 
       category: "Blog", 
-      items: [{ label: "The Beckoning Blog", href: "/blog" }]
+      items: [{ label: "The Regathering", href: "/blog" }]
     },
     { 
       category: "Grief", 
@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
     },
     { 
       category: "Projects", 
-      items: [{ label: "Projects", href: "/projects" }]
+      items: [{ label: "Collabs etc.", href: "/projects" }]
     },
     {
       category: "Shop",
