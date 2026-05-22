@@ -2,22 +2,19 @@
 import React from "react";
 import Link from "next/link";
 
-// 1. Define the blueprint for an individual link
 interface FooterLink {
   name: string;
   url: string;
-  icon?: string;        // The '?' means this is optional
-  isExternal?: boolean; // The '?' means this is optional
+  icon?: string;  
+  isExternal?: boolean; 
 }
 
-// 2. Define the blueprint for a section
 interface LinkSection {
   title: string;
   links: FooterLink[];
 }
 
 const Footer: React.FC = () => {
-  // 3. Explicitly type the array using our new LinkSection interface
   const linkSections: LinkSection[] = [
     {
       title: "Explore",
@@ -25,7 +22,7 @@ const Footer: React.FC = () => {
         { name: "Home", url: "/" },
         { name: "The Regathering", url: "/blog" },
         { name: "Grief", url: "/grief" },
-        { name: "Collabs etc.", url: "/projects" },
+        { name: "Collabs, Collaborations, Connections", url: "/projects" },
       ],
     },
     {
