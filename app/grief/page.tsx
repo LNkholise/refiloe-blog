@@ -19,7 +19,7 @@ export default function ComingSoon() {
           <p className="max-w-2xl text-base md:text-lg leading-relaxed text-primary font-sans">
             I previously hosted <a href="https://www.youtube.com/playlist?list=PLfs2NHMZSv4oD5vwScw6Fjn8kqadds2G1&si=gja4l4PpjA1hSjus" target="_blank" rel="noopener noreferrer"><Highlighter action="highlight">
               Granules of Grief with Refiloe
-            </Highlighter></a>, a now-archived podcast exploring stories of living while bereaved, mourning, and grieving.
+            </Highlighter></a>, a now-archived podcast exploring stories of living with bereavement-related grief.
           </p>
 
           <div className="w-12 border-b border-border/60 my-2" />
