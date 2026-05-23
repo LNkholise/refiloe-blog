@@ -10,7 +10,7 @@ export default function ComingSoon() {
         menu={<Navbar direction="down" />} 
         headingSerif="Curations"
         headingSans="Connections Collaborations"
-        introText="Sign up for updates below and follow me on social media to stay in the loop about new projects and collaborations."
+        introText="Come along for the journey by signing up for updates below and following me on social media for new projects and collaborations."
         bgImageUrl="/images/projects/hero.jpg"
       />
       <ComingSoonBody />
