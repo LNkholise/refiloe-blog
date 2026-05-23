@@ -37,7 +37,7 @@ export default async function Home() {
     <div>
       <Hero navbar={<Navbar direction="down" />} />
       <ParallexSection />
-      <InfoSection />
+      { /* <InfoSection /> */ }
       <BlogSection articles={latestStories} />
       { (slides.length !== 0 || slides) &&
       <Announcements slides={slides} />
