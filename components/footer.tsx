@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
       title: "Quick Links",
       links: [
         { name: "Linkedin", icon: "↗", url: "https://www.linkedin.com/in/refiloe-letokoto-0759a1409", isExternal: true },
-        { name: "Youtube", icon: "↗", url: "https://youtube.com/@refiloeletokoto?si=77xbUYFl2n155RrS", isExternal: true },
+        { name: "YouTube", icon: "↗", url: "https://youtube.com/@refiloeletokoto?si=77xbUYFl2n155RrS", isExternal: true },
         { name: "Instagram", icon: "↗", url: "https://www.instagram.com/refiloeletokoto?igsh=MTJrOWNyNXh5NnJrMw%3D%3D&utm_source=qr", isExternal: true },
       ],
     },
