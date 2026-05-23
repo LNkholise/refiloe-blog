@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
     },
     { 
       category: "Projects", 
-      items: [{ label: "Curations, Collaborations, Connections", href: "/projects" }]
+      items: [{ label: "Curations, Connections, Collaborations", href: "/projects" }]
     },
     {
       category: "Shop",
@@ -54,7 +54,6 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
 
   return (
     <>
-      {/* Kept your exact wrapper classes, positioning, and z-index untouched */}
       <div className="relative top-0 left-0 right-12 md:left-10 md:right-[40%] flex justify-between items-center z-50 pointer-events-none">
         <button 
           onMouseEnter={() => setHoverMenu(true)}
@@ -72,7 +71,6 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
         </button>
       </div>
       
-      {/* Changed bg-chart-4 to your dark charcoal tone for a more editorial feel */}
       <div 
         className={`fixed inset-0 bg-[#2B2522] z-50 transition-transform duration-700 ease-in-out flex flex-col ${getTranslateClass()}`}
       >
@@ -94,8 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
               "HOME"
             )}
           </button>
-
-          {/* Removed the em dash (—) from Close */}
+          
           <button 
             onMouseEnter={() => setHoverClose(true)}
             onMouseLeave={() => setHoverClose(false)}
@@ -112,11 +109,9 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
           </button>
         </div>
         
-        {/* Switched to lg:grid-cols-4 so all categories sit on one row cleanly */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 p-12 md:p-24 overflow-y-auto">
           {menuItems.map((group, idx) => (
             <div key={idx} className="flex flex-col gap-6">
-              {/* Removed the bottom border lines entirely */}
               <h3 className="text-white/40 font-sans text-[10px] font-bold uppercase tracking-[0.4em]">
                 {group.category}
               </h3>
