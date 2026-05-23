@@ -155,15 +155,6 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
         <div className="hidden lg:flex h-48 px-12 md:px-24 pb-16 items-end justify-start">
           <div className="max-w-md w-full"> 
             <p className="text-[#D8CFC4] font-serif italic font-light text-xl leading-relaxed text-left">
-              Contact{" "}
-              <a 
-                href="mailto:letokotorefiloe@gmail.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="not-italic font-sans text-sm tracking-widest font-bold text-[#C2A15A] hover:text-white transition-colors duration-300 ml-2"
-              >
-                letokotorefiloe@gmail.com
-              </a>
             </p>
           </div>
         </div>
