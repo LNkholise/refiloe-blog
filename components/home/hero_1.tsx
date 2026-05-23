@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ArrowRightIcon, LinkedinLogoIcon, YoutubeLogoIcon } from "@phosphor-icons/react";
+import { ArrowRightIcon, LinkedinLogoIcon, InstagramLogoIcon, YoutubeLogoIcon } from "@phosphor-icons/react";
 import { Button } from "../ui/button";
 
 export default function HeroSection({
@@ -60,6 +60,14 @@ export default function HeroSection({
               aria-label="LinkedIn"
             >
               <LinkedinLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
+            </a>
+            <a 
+              href="https://www.instagram.com/refiloeletokoto?igsh=MTJrOWNyNXh5NnJrMw%3D%3D&utm_source=qr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <InstagramLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
             </a>
             <a 
               href="https://youtube.com/@refiloeletokoto?si=77xbUYFl2n155RrS" 
