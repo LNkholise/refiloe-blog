@@ -19,7 +19,7 @@ export default function HeroSection({
         <div className="relative mx-8">
           <h1 className="w-full lg:w-[140%] text-6xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary mt-12 lg:mt-0">
             <span className="block font-serif italic font-light tracking-normal ml-[-4px]">Refiloe</span>
-            <span className="block font-black uppercase">Lekotoko</span>
+            <span className="block font-black uppercase">Letokoto</span>
           </h1>
         </div>
         <div className="flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest">
