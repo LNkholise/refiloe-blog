@@ -25,7 +25,7 @@ export default function LettersToMomSection() {
       
       <div className="absolute z-20 bottom-40 left-10 lg:bottom-20 lg:left-[5%] lg:right-auto w-[60%] lg:w-[35%] h-[30vh] lg:h-[80%] animate-in fade-in duration-1000 delay-300">
         <img
-          src="/images/bio.jpg"
+          src="https://images.unsplash.com/photo-1529251333259-d36cccaf22ea?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Portrait"
           className="h-full w-full object-cover contrast-125 grayscale shadow-2xl border-[12px] border-white"
         />
