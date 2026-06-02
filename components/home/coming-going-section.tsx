@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ComingGoingSection() {
   return (
-    <section className="relative min-h-screen w-full bg-background flex flex-col lg:flex-row-reverse overflow-hidden lg:overflow-visible">
+    <section className="relative min-h-screen w-full bg-background flex flex-col lg:flex-row-reverse overflow-hidden lg:overflow-visible mt-10">
       <div className="relative z-10 flex w-full lg:w-[75%] h-[60vh] lg:h-screen flex-col bg-[#D8CFC4] text-white p-8 lg:p-20 overflow-hidden">
         <div className="relative flex-1 flex flex-col justify-center max-w-2xl lg:ml-auto">
           <p className="text-sm leading-[1.4] font-light text-primary tracking-widest text-muted animate-in fade-in slide-in-from-left-8 duration-1000">
