@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Hero from "@/components/coming-soon/hero";
 import { Highlighter } from '@/components/ui/highlighter';
-import LettersSection from "@/components/home/letters-to-mom-section.tsx";
+import LettersSection from "@/components/home/letters-to-mom-section";
 
 export default function ComingSoon() {
   return (
