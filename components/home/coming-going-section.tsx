@@ -20,7 +20,7 @@ export default function ComingGoingSection() {
       <div className="relative z-0 flex w-full lg:w-[25%] bg-background min-h-[10vh] lg:min-h-screen border-r border-muted/20">
       </div>
       
-      <div className="absolute z-20 bottom-40 left-10 lg:bottom-20 lg:left-[5%] lg:right-auto w-[60%] lg:w-[35%] h-[30vh] lg:h-[80%] animate-in fade-in duration-1000 delay-300">
+      <div className="absolute z-20 bottom-20 left-10 lg:bottom-20 lg:left-[5%] lg:right-auto w-[60%] lg:w-[35%] h-[30vh] lg:h-[80%] animate-in fade-in duration-1000 delay-300">
         <img
           src="/images/bio.jpg"
           alt="Portrait"
