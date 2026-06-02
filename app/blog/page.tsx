@@ -18,7 +18,7 @@ export default async function Home() {
     image: post.entry.image ?? "",
     meta: post.entry.duration ?? "0",
     date: post.entry.date ?? "",
-    category: post.entry.type ?? "essay",
+    category: post.entry.type ?? "grief",
     slug: `/blog/${post.slug}`,
   }));
 
