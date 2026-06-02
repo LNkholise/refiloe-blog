@@ -22,7 +22,6 @@ export default config({
           label: 'Story',
           description: 'Select the type of story your post is',
           options: [
-            { label: 'essay', value: 'essay' },
             { label: 'grief', value: 'grief' },
             { label: 'gender equality', value: 'gender_equality' },
             { label: 'immigration', value: 'immigration' },
