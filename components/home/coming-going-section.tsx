@@ -16,7 +16,6 @@ export default function ComingGoingSection() {
          </p>
         </div>
       </div>
-      </div>
       
       <div className="absolute z-20 bottom-25 left-10 lg:bottom-20 lg:left-[5%] lg:right-auto w-[60%] lg:w-[35%] h-[30vh] lg:h-[80%] animate-in fade-in duration-1000 delay-300">
         <img
