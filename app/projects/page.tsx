@@ -1,5 +1,6 @@
 import ComingSoonBody from "@/components/coming-soon/info";
 import Navbar from "@/components/navbar";
+import ComingGoingSection from "@/components/coming-going-section";
 import Footer from "@/components/footer";
 import Hero from "@/components/coming-soon/hero";
 
@@ -13,6 +14,7 @@ export default function ComingSoon() {
         introText="Come along for the journey by signing up for updates below and following me on social media for new projects and collaborations."
         bgImageUrl="/images/curations.jpg"
       />
+      <ComingGoingSection />
       <ComingSoonBody />
       <Footer />
     </div>
