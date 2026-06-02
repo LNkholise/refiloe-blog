@@ -1,6 +1,6 @@
 import ComingSoonBody from "@/components/coming-soon/info";
 import Navbar from "@/components/navbar";
-import ComingGoingSection from "@/components/coming-going-section";
+import ComingGoingSection from "@/components/home/coming-going-section";
 import Footer from "@/components/footer";
 import Hero from "@/components/coming-soon/hero";
 
