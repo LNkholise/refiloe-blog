@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
+import { MorphingText } from "../ui/morphing-text";
 
 const texts = [
-  "This site is a home for the work born of that early inclination",
-  "Traveling from the page to wherever the conversations take us",
-  "From Lesotho to the US, and around the world.",
+  "Thank you for walking alongside me in this story still unfolding",
+  "Thousands of miles away from where it began.",
 ]
 
 const ParallaxSection: React.FC = () => {
@@ -41,6 +41,10 @@ const ParallaxSection: React.FC = () => {
             backgroundColor: "rgba(0,0,0,0.3)"
           }} 
         />
+        
+        <div className="flex items-center justify-center mt-10 lg:mt-18 mx-4 opacity-60">
+          <MorphingText texts={texts} className="text-3xl sm:text-5xl text-white" />
+         </div>
       </div>
 
     </section>
