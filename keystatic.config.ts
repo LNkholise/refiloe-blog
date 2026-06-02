@@ -24,6 +24,10 @@ export default config({
           options: [
             { label: 'essay', value: 'essay' },
             { label: 'grief', value: 'grief' },
+            { label: 'gender equality', value: 'gender_equality' },
+            { label: 'immigration', value: 'immigration' },
+            { label: 'growth', value: 'growth' },
+            { label: 'hope', value: 'hope' }
           ],
           defaultValue: 'essay'
         }),
