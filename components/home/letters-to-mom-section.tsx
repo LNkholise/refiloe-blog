@@ -3,6 +3,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@phosphor-icons/react";
+import Link from "next/link";
 
 export default function LettersToMomSection() {
   return (
@@ -14,16 +15,18 @@ export default function LettersToMomSection() {
             The featured writers, from Colombia, India, South Africa, and the United States, share their individual pain. 
             Yet collectively, all their narratives are tied together by stubborn growth, grace, and gratitude. 
          </p>
-         <Button variant="secondary" className="flex items-center gap-2 text-sm w-fit">
+         <Link href="/blog/dear-mme-letters-to-mom-collection" >
+          <Button variant="default" className="flex items-center gap-2 text-sm w-fit">
             Read Letters From Mom <ArrowRightIcon size={16} />
           </Button>
+         </Link>
         </div>
       </div>
       
       <div className="relative z-0 flex w-full lg:w-[25%] bg-background min-h-[10vh] lg:min-h-screen border-r border-muted/20">
       </div>
       
-      <div className="absolute z-20 bottom-40 left-10 lg:bottom-20 lg:left-[5%] lg:right-auto w-[60%] lg:w-[35%] h-[30vh] lg:h-[80%] animate-in fade-in duration-1000 delay-300">
+      <div className="absolute z-20 bottom-40 left-10 lg:bottom-20 lg:left-[15%] lg:right-auto w-[60%] lg:w-[35%] h-[30vh] lg:h-[80%] animate-in fade-in duration-1000 delay-300">
         <img
           src="https://images.unsplash.com/photo-1529251333259-d36cccaf22ea?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Portrait"
