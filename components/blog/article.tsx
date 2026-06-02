@@ -118,7 +118,7 @@ export default function ArticleSection({ menu, coverImage, content, duration, pi
 
         <main className="w-full">
           <header className="mb-12 flex flex-col items-start justify-center">
-            <h1 className="text-start text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary">
+            <h1 className="text-start text-4xl sm:text-7xl md:text-8xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary">
               <span className="block font-serif italic font-light tracking-normal">{ leading }</span>
               <span className="block font-black uppercase">{ last }</span>
             </h1>
