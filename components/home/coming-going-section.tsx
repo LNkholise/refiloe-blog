@@ -21,7 +21,7 @@ export default function ComingGoingSection() {
         <img
           src="/images/bio.jpg"
           alt="Portrait"
-          className="h-full w-full object-cover contrast-125 grayscale shadow-2xl border-[12px] border-white"
+          className="h-full w-full object-cover contrast-125 grayscale shadow-lg sm:shadow-2xl border-[12px] border-white"
         />
       </div>
 
