@@ -11,7 +11,7 @@ export default function ComingSoon() {
         headingSerif="Curations"
         headingSans="Connections Collaborations"
         introText="Come along for the journey by signing up for updates below and following me on social media for new projects and collaborations."
-        bgImageUrl="/images/projects/hero.jpg"
+        bgImageUrl="/images/curations.jpg"
       />
       <ComingSoonBody />
       <Footer />
