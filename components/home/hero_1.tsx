@@ -22,7 +22,7 @@ export default function HeroSection({
         </div>
 
         <div className="relative z-10 mb-60 mx-0 sm:mx-10">
-          <h1 className="w-full text-6xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary">
+          <h1 className="w-full text-4xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary">
             <span className="block font-serif italic font-light tracking-normal ml-[-4px]">Refiloe</span>
             <span className="block font-black uppercase">Letokoto</span>
           </h1>
