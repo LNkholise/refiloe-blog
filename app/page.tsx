@@ -1,6 +1,5 @@
 import Hero from "@/components/home/hero_1";
 import ParallexSection from "@/components/home/parallex-section";
-import InfoSection from "@/components/home/magazine-section";
 import BlogSection from "@/components/home/blog-section";
 import Announcements from "@/components/home/announcements";
 import Navbar from "@/components/navbar";
@@ -37,7 +36,6 @@ export default async function Home() {
     <div>
       <Hero navbar={<Navbar direction="down" />} />
       <ParallexSection />
-      { /* <InfoSection /> */ }
       <BlogSection articles={latestStories} />
       { (slides.length !== 0 || slides) &&
       <Announcements slides={slides} />
