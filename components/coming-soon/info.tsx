@@ -18,7 +18,7 @@ export default function ComingSoonBody({ children }: ComingSoonBodyProps) {
             </span>
           </h2>
           <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted-foreground pt-6">
-            Sign up for <Highlighter><a href="https://mailchi.mp/1a93a9da26bb/v3r48lixni" target="_blank" rel="noopener noreferrer">updates</a></Highlighter>
+            <Highlighter><a href="https://mailchi.mp/1a93a9da26bb/v3r48lixni" target="_blank" rel="noopener noreferrer">Sign up</a></Highlighter> up for updates
           </p>
         </div>
       ) : (
