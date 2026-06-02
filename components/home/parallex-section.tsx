@@ -18,14 +18,14 @@ const ParallaxSection: React.FC = () => {
         </div>
         <div className="lg:w-1/4">
           <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-            Questions have always plagued me. Whys. Wheres. Whats. 
-            This site is an answer to a call that followed me from long afternoons of reading, writing, and daydreaming on the red stoep of my parents’ house in Maseru, Lesotho.
+            Questions have always tugged at the hem of whatever cloak I wear. The human whys and hows. 
+            This site is an answer to a call that followed me from long afternoons of reading, writing, and daydreaming on the red stoep of my parents' house in Khubetsoana, Berea, Lesotho.
           </p>
         </div>
         <div className="lg:w-1/4">
           <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-            I am Refiloe Letokoto — writer, speaker, storyteller, gender equality advocate, and grief scholar. Thank you for walking alongside me in this story still unfolding, thousands of miles away from where I started.
-
+            I am Refiloe Letokoto, sometimes Mabejane, a writer, speaker, storyteller, gender equality advocate, and grief scholar. I wonder about life and legacy.
+            I write fiction and nonfiction, convinced that writing is a branch of medicine. Knowing that my story can't be the only one that matters, I bear witness to others' realities and narratives.
           </p>
         </div>
       </div>
