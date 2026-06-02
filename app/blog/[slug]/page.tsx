@@ -31,7 +31,7 @@ export default async function Home({ params }: { params: Promise<{ slug: string 
     title: post.entry.title ?? "",
     image: post.entry.image ?? "",
     date: post.entry.date ?? "",
-    type: post.entry.type ?? "essay",
+    type: post.entry.type ?? "grief",
     slug: post.slug,
     description: post.entry.summary ?? "",
   }))
@@ -43,7 +43,7 @@ export default async function Home({ params }: { params: Promise<{ slug: string 
         content={contentData || []}
         duration={post.duration ?? 0}
         title={post.title ?? "No Title Found"}
-        type={post.type ?? "essay"}
+        type={post.type ?? "grief"}
         date={post.date ?? 'UNKNOWN'}
         picks={matchingStories || []}
       />
