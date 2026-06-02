@@ -33,7 +33,7 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
       <div className="px-8 md:px-20">
        <div className="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-20 gap-8">
         <div className="lg:w-1/2">
-          <h1 className="w-full lg:w-[140%] text-6xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary mt-12 lg:mt-0">
+          <h1 className="w-full lg:w-[140%] text-4xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary mt-12 lg:mt-0">
             <span className="block font-serif italic font-light tracking-normal ml-[-4px]">The</span>
             <span className="block font-black uppercase">Regathering</span>
           </h1>
