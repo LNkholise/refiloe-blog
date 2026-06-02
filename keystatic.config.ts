@@ -28,7 +28,7 @@ export default config({
             { label: 'growth', value: 'growth' },
             { label: 'hope', value: 'hope' }
           ],
-          defaultValue: 'essay'
+          defaultValue: 'grief'
         }),
         summary: fields.text({
           label: 'Brief Description',
