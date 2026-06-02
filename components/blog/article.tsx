@@ -167,7 +167,7 @@ export default function ArticleSection({ menu, coverImage, content, duration, pi
                   </div>
                   <div>
                     <h3 className="font-bold uppercase tracking-tighter text-sm">Refiloe Letokoto</h3>
-                    <p className="text-[9px] text-muted-foreground uppercase tracking-[0.15em]">Professional Writer</p>
+                    <p className="text-[9px] text-muted-foreground uppercase tracking-[0.15em]">Writer</p>
                   </div>
                 </CardHeader>
                 <CardContent>
