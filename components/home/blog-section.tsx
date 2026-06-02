@@ -23,7 +23,7 @@ export default function EditorialGrid({ articles }:{articles: Post[]}) {
     "lg:col-span-2 lg:row-span-1"
   ];
   return (
-    <section className="w-full bg-background py-16 px-4 md:px-10 lg:px-16">
+    <section className="w-full bg-background pb-8 px-6 md:px-10 lg:px-16">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <Link href="/blog">
           <button className="text-[10px] font-bold uppercase tracking-[0.4em] border-b border-foreground pb-2 transition-all hover:text-muted-foreground hover:border-muted-foreground">
