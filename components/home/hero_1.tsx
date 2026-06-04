@@ -38,7 +38,7 @@ export default function HeroSection({
         
         <div className="max-w-xs">
           <p className="mb-8 lg:mb-10 text-lg lg:text-2xl font-serif italic leading-relaxed text-primary">
-            Wonderer, Writer, Witness.
+            Wondering. Witnessing. Writing
           </p>
           <Button variant="default" 
                   className="flex items-center gap-2 text-sm w-fit"
