@@ -3,8 +3,8 @@ import React from "react";
 import { MorphingText } from "../ui/morphing-text";
 
 const texts = [
-  "Thank you for walking alongside me in this story still unfolding",
-  "Thousands of miles away from where it began.",
+  "Thank you for walking alongside me in this story still unfolding,",
+  "thousands of miles away from where it began.",
 ]
 
 const ParallaxSection: React.FC = () => {
@@ -17,15 +17,15 @@ const ParallaxSection: React.FC = () => {
           </h2>
         </div>
         <div className="lg:w-1/4">
-          <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-            Questions have always tugged at the hem of whatever cloak I wear. The human whys and hows. 
-            This site is an answer to a call that followed me from long afternoons of reading, writing, and daydreaming on the red stoep of my parents' house in Khubetsoana, Berea, Lesotho.
+          <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">     
+            I am Refiloe Letokoto, sometimes Mabejane, a writer, speaker, storyteller, gender equality advocate, and grief scholar. 
+            Questions have always tugged at the hem of whatever cloak I wear. The human whys and hows. This site is an answer to a call that followed me from long afternoons of reading, writing, and daydreaming on the red stoep of my parents’ house in Khubetsoana, Berea, Lesotho.
           </p>
         </div>
         <div className="lg:w-1/4">
           <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-            I am Refiloe Letokoto, sometimes Mabejane, a writer, speaker, storyteller, gender equality advocate, and grief scholar. I wonder about life and legacy.
-            I write fiction and nonfiction, convinced that writing is a branch of medicine. Knowing that my story can't be the only one that matters, I bear witness to others' realities and narratives.
+            I wonder endlessly about life, legacy, and paths to growth. Knowing that my story can’t be the only one that matters, I bear witness to others’ realities and narratives. 
+            I write fiction and nonfiction, believing without holes that writing is a branch of medicine.
           </p>
         </div>
       </div>
