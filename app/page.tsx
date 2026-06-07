@@ -24,7 +24,11 @@ export default async function Home() {
   }));
 
   const latestStories = allPosts
-  .sort((a, b) => new Date(b.entry.date).getTime() - new Date(a.entry.date).getTime())
+  .sort((a, b) => {
+    const dateB = new Date(b.entry.date ?? "").getTime();
+    const dateA = new Date(a.entry.date ?? "").getTime();
+    return dateB - dateA;
+  })
   .slice(0, 3)
   .map((post) => ({
     title: post.entry.title ?? "",
