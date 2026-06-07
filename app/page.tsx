@@ -24,7 +24,7 @@ export default async function Home() {
   }));
 
   const latestStories = allPosts
-  .sort((a, b) => new Date(b.entry.date) - new Date(a.entry.date))
+  .sort((a, b) => new Date(b.entry.date).getTime() - new Date(a.entry.date).getTime())
   .slice(0, 3)
   .map((post) => ({
     title: post.entry.title ?? "",
