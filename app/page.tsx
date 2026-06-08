@@ -23,15 +23,21 @@ export default async function Home() {
     text: s.content
   }));
 
-  const latestStories = allPosts.slice(0,3).map((post) => ({
+  const latestStories = allPosts
+  .sort((a, b) => {
+    const dateB = new Date(b.entry.date ?? "").getTime();
+    const dateA = new Date(a.entry.date ?? "").getTime();
+    return dateB - dateA;
+  })
+  .slice(0, 3)
+  .map((post) => ({
     title: post.entry.title ?? "",
     image: post.entry.image ?? "",
     date: post.entry.date ?? "",
     type: post.entry.type ?? "grief",
     slug: `/blog/${post.slug}`,
     description: post.entry.summary ?? "",
-  })
-  )
+  }))
   return (
     <div>
       <Hero navbar={<Navbar direction="down" />} />
