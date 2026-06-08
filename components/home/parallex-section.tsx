@@ -18,16 +18,16 @@ const ParallaxSection: React.FC = () => {
         </div>
         <div className="lg:w-1/4">
           <p className="text-base leading-relaxed text-muted-foreground tracking-widest font-sans font-medium">
-            Questions have always tugged at the hem of whatever cloak I wear. The human whys and hows. Ultimately, questions about three Gs simply would not relent: grief, gender equality, and the pursuit of growth.
-            <br/><br/>
-            This site is an answer to that persistent call, one that followed me from long afternoons of wondering, reading, and writing on the red stoep of my parents&apos; house in Khubetsoana, Maseru, Lesotho.
+            Questions have always tugged at the hem of whatever cloak I wear. The human whys and hows. 
+            This site is an answer to that persistent call, one that followed me from long afternoons of 
+            wondering, reading, and writing on the red stoep of my parents&apos; house in Khubetsoana, Maseru, Lesotho.
           </p>
         </div>
         <div className="lg:w-1/4">
           <p className="text-base leading-relaxed text-muted-foreground tracking-widest font-sans font-medium">
-            I write fiction and non-fiction, having long believed that writing, too, is a branch of medicine. Knowing that my story cannot be the only one that matters, I bear witness to the realities and narratives of others.
-            <br/><br/>
-            I am Refiloe Letokoto, writer, storyteller, gender equality advocate, and grief scholar.
+            I write fiction and non-fiction, because isn&apos;t writing itself a branch of  medicine? Knowing my story 
+            cannot be the only one that matters, I bear witness to the realities and narratives of others.
+            What I know so far is that I am Refiloe Letokoto: writer, storyteller, gender equality advocate, and grief scholar. 
           </p>
         </div>
       </div>

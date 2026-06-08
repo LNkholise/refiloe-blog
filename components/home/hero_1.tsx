@@ -49,20 +49,20 @@ export default function HeroSection({
   <div className="flex flex-col gap-8 lg:gap-0">
     <div className="flex items-center gap-8">
       <a 
-      href="https://www.linkedin.com/in/refiloe-letokoto-0759a1409" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <LinkedinLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
-            </a>
-            <a 
               href="https://www.instagram.com/refiloeletokoto?igsh=MTJrOWNyNXh5NnJrMw%3D%3D&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
               <InstagramLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
+            </a>
+      <a 
+      href="https://www.linkedin.com/in/refiloe-letokoto-0759a1409" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <LinkedinLogoIcon size={20} weight="fill" className="text-primary/80 hover:text-primary transition-colors" />
             </a>
             <a 
               href="https://youtube.com/@refiloeletokoto?si=77xbUYFl2n155RrS" 

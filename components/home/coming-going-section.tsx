@@ -10,10 +10,10 @@ export default function ComingGoingSection() {
           <h2 className="text-4xl lg:text-5xl font-medium tracking-tighter text-primary mb-6">
             Adventures Ahead
           </h2>
-          <p className="text-base leading-[1.55] text-primary tracking-widest text-muted animate-in fade-in slide-in-from-left-8 duration-1000">
+          <p className="text-base leading-[1.55] text-muted-foreground tracking-widest animate-in fade-in slide-in-from-left-8 duration-1000">
             One Saturday morning, my family, eight suitcases, one carry-on, and nothing but the kind of hope that mocks logic, left the Kingdom of Lesotho for the United States. 
             Four new identities awaited, some preferred and many less-than-preferred ways of being seen and read. Old and new questions emerged: What lies beneath decisions about leaving, staying, returning, 
-            and learning to live well with what is? New adventures in the works, so let&apos;s{" "}
+            and learning to live well with what is? New adventures are currently in the works, so let&apos;s{" "}
             <a 
               href="https://mailchi.mp/1a93a9da26bb/v3r48lixni" 
               target="_blank" 

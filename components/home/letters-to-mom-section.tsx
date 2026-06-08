@@ -13,7 +13,7 @@ export default function LettersToMomSection() {
           <h2 className="text-4xl lg:text-5xl font-medium tracking-tighter text-primary">
             Letters to Mom Collection
           </h2>
-          <p className="text-base leading-[1.55] text-primary tracking-widest text-muted animate-in fade-in slide-in-from-left-8 duration-1000">
+          <p className="text-base leading-[1.55] text-muted-foreground tracking-widest animate-in fade-in slide-in-from-left-8 duration-1000">
             On the twenty-fifth anniversary of my mother&apos;s passing, I curated the Dear Me: Letters to Mom, a collection honoring mothers who are no longer physically here, from and for those without their mothers on Mother&apos;s Day. The featured writers, from Colombia, India, South Africa, and the United States, share their individual pain. Yet collectively, all their narratives are tied together by stubborn growth, grace, and gratitude.
           </p>
           <Link href="/blog/dear-mme-letters-to-mom-collection">
