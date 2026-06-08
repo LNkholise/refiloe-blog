@@ -26,8 +26,8 @@ const ParallaxSection: React.FC = () => {
         <div className="lg:w-1/4">
           <p className="text-base leading-relaxed text-muted-foreground tracking-widest font-sans font-medium">
             I write fiction and non-fiction, because isn&apos;t writing itself a branch of  medicine? Knowing my story 
-            cannot be the only one that matters, I bear witness to the realities and narratives of others.
-            What I know so far is that I am Refiloe Letokoto: writer, storyteller, gender equality advocate, and grief scholar. 
+            is not the only one that matters, I bear witness to the realities and narratives of others.
+            <strong>I am Refiloe Letokoto: writer, storyteller, gender equality advocate, and grief scholar.</strong>
           </p>
         </div>
       </div>
