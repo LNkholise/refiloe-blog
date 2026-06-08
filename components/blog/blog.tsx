@@ -40,8 +40,7 @@ export default function WriterBlog({ menu, mainArticles, oldArticles }: { menu: 
         </div>
         <div className="lg:w-1/4">
           <p className="text-sm leading-relaxed text-muted-foreground tracking-widest font-sans">
-            This is not a blog. This is a hard-won return to openly exploring the extraordinary, the everyday, and everything in between.   
-          </p>
+            This is not just a blog. This is a hard-won return to my essence: exploring the extraordinary, the everyday, and the easily erased.</p>
         </div>
       </div>
         <div className="relative w-full h-[45vh] md:h-[60vh] lg:h-[75vh] overflow-hidden rounded-none">

@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ direction = "up" }) => {
     },
     { 
       category: "Projects", 
-      items: [{ label: "Curations, Connections, Collaborations", href: "/projects" }]
+      items: [{ label: "Curations & Collaborations", href: "/projects" }]
     },
     {
       category: "Shop",

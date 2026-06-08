@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         { name: "Home", url: "/" },
         { name: "The Regathering", url: "/blog" },
         { name: "Grief", url: "/grief" },
-        { name: "Curations, Collaborations, Connections", url: "/projects" },
+        { name: "Curations & Collaborations", url: "/projects" },
       ],
     },
     {

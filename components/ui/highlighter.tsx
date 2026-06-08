@@ -30,7 +30,7 @@ interface HighlighterProps {
 export function Highlighter({
   children,
   action = "highlight",
-  color = "#ffd1dc",
+  color = "#c9a470",
   strokeWidth = 1.5,
   animationDuration = 600,
   iterations = 2,

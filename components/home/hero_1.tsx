@@ -15,13 +15,13 @@ export default function HeroSection({
         <img 
           src="/images/hero.jpg" 
           alt="Portrait" 
-          className="absolute inset-0 h-full w-full object-cover grayscale contrast-125 z-0"
+          className="absolute inset-0 h-full w-full object-cover grayscale contrast-125 z-0 object-top"
         />
         <div className="relative z-50 flex items-center gap-2 font-bold tracking-tighter">
           {navbar}
         </div>
 
-        <div className="relative z-10 mb-60 mx-0 sm:mx-10">
+        <div className="relative z-10 mb-75 mx-0 sm:mx-10">
           <h1 className="w-full text-4xl lg:text-[7rem] leading-[0.85] tracking-tighter text-primary">
             <span className="block font-serif italic font-light tracking-normal ml-[-4px]">Refiloe</span>
             <span className="block font-black uppercase">Letokoto</span>
@@ -32,29 +32,24 @@ export default function HeroSection({
         </div>
       </div>
       <div className="relative z-10 flex w-full lg:w-[35%] flex-col justify-between bg-[#D8CFC4] p-8 lg:p-12 text-white order-2 gap-8 lg:gap-0 shrink-0">
-        <div className="gap-4">
-          <p className="text-xs font-bold uppercase tracking-[0.4em] text-primary font-sans">Refiloe Letokoto</p>
-        </div>
-        
-        <div className="max-w-xs">
-          <p className="mb-8 lg:mb-10 text-lg lg:text-2xl font-serif italic leading-relaxed text-primary">
-            Wondering. Witnessing. Writing
-          </p>
-          <Button variant="default" 
-                  className="flex items-center gap-2 text-sm w-fit"
-                  onClick={() => {
-                  const targetSection = document.getElementById("content-section");
-                  targetSection?.scrollIntoView({ behavior: "smooth" });
-                }}
-          >
-            Come with Me <ArrowRightIcon size={16} />
-          </Button>
-        </div>
-        
-        <div className="flex flex-col gap-8 lg:gap-0">
-          <div className="flex items-center gap-8">
-            <a 
-              href="https://www.linkedin.com/in/refiloe-letokoto-0759a1409" 
+    <p className="text-xs font-bold uppercase tracking-[0.4em] text-primary font-sans">Writer • Humanist</p>
+  
+  <div className="flex items-center justify-center">
+    <Button variant="default" 
+            className="flex items-center gap-2 text-sm w-fit px-12 py-6 text-base"
+            onClick={() => {
+            const targetSection = document.getElementById("content-section");
+            targetSection?.scrollIntoView({ behavior: "smooth" });
+          }}
+    >
+      Come with Me <ArrowRightIcon size={18} />
+    </Button>
+  </div>
+  
+  <div className="flex flex-col gap-8 lg:gap-0">
+    <div className="flex items-center gap-8">
+      <a 
+      href="https://www.linkedin.com/in/refiloe-letokoto-0759a1409" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn"

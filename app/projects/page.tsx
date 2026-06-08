@@ -10,7 +10,7 @@ export default function ComingSoon() {
       <Hero 
         menu={<Navbar direction="down" />} 
         headingSerif="Curations"
-        headingSans="Connections Collaborations"
+        headingSans="& Collaborations"
         introText="Come along for the journey by signing up for updates below and following me on social media for new projects and collaborations."
         bgImageUrl="/images/curations.jpg"
       />
