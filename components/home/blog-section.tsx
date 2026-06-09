@@ -27,7 +27,7 @@ export default function EditorialGrid({ articles }:{articles: Post[]}) {
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <Link href="/blog">
           <button className="text-[10px] font-bold uppercase tracking-[0.4em] border-b border-foreground pb-2 transition-all hover:text-muted-foreground hover:border-muted-foreground">
-            Explore with me
+            New Writing
           </button>
         </Link>
       </div>

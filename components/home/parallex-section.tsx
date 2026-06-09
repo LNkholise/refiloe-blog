@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { MorphingText } from "../ui/morphing-text";
 
 const texts = [
@@ -20,14 +21,25 @@ const ParallaxSection: React.FC = () => {
           <p className="text-base leading-relaxed text-muted-foreground tracking-widest font-sans font-medium">
             Questions have always tugged at the hem of whatever cloak I wear. The human whys and hows. 
             This site is an answer to that persistent call, one that followed me from long afternoons of 
-            wondering, reading, and writing on the red stoep of my parents&apos; house in Khubetsoana, Maseru, Lesotho.
+            wondering, reading, and writing on the red stoep of my parents&apos; house in Maseru, Lesotho.
           </p>
         </div>
         <div className="lg:w-1/4">
           <p className="text-base leading-relaxed text-muted-foreground tracking-widest font-sans font-medium">
-            I write fiction and non-fiction, because isn&apos;t writing itself a branch of  medicine? Knowing my story 
-            is not the only one that matters, I bear witness to the realities and narratives of others.
-            <strong>I am Refiloe Letokoto: writer, storyteller, gender equality advocate, and grief scholar.</strong>
+            In obedience, I write fiction and{" "}
+            <Link href="/blog" className="hover:italic transition-all duration-300">
+              non-fiction
+            </Link>
+            . Knowing my story isn&apos;t the only one that matters, I{" "}
+            <Link href="/projects" className="hover:italic transition-all duration-300">
+              bear witness{" "}
+            </Link>
+            to the realities and narratives of others.  
+            <strong> I am Refiloe Letokoto: writer, storyteller, gender equality advocate, and{" "}
+            <Link href="/grief" className="hover:italic transition-all duration-300">
+              grief scholar
+            </Link>
+            .</strong>
           </p>
         </div>
       </div>
