@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { MorphingText } from "../ui/morphing-text";
+import { Highlighter } from '@/components/ui/highlighter';
 
 const texts = [
   "Thank you for walking alongside me in this story still unfolding,",
@@ -27,18 +28,24 @@ const ParallaxSection: React.FC = () => {
         <div className="lg:w-1/4">
           <p className="text-base leading-relaxed text-muted-foreground tracking-widest font-sans font-medium">
             In obedience, I write fiction and{" "}
-            <Link href="/blog" className="hover:italic transition-all duration-300">
-              non-fiction
-            </Link>
+            <Highlighter>
+              <Link href="/blog" className="hover:italic transition-all duration-300">
+                non-fiction
+              </Link>
+            </Highlighter>
             . Knowing my story isn&apos;t the only one that matters, I{" "}
-            <Link href="/projects" className="hover:italic transition-all duration-300">
-              bear witness{" "}
-            </Link>
-            to the realities and narratives of others.  
+            <Highlighter>
+              <Link href="/projects" className="hover:italic transition-all duration-300">
+                bear witness
+              </Link>
+            </Highlighter>
+            {" "}to the realities and narratives of others.  
             <strong> I am Refiloe Letokoto: writer, storyteller, gender equality advocate, and{" "}
-            <Link href="/grief" className="hover:italic transition-all duration-300">
-              grief scholar
-            </Link>
+            <Highlighter>
+              <Link href="/grief" className="hover:italic transition-all duration-300">
+                grief scholar
+              </Link>
+            </Highlighter>
             .</strong>
           </p>
         </div>
